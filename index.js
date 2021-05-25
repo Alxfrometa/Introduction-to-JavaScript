@@ -17,8 +17,11 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let votingAge = 17;
+if(votingAge >= 18){
+    console.log(true);
+  }
+  else{console.log(false);}
 
 /*
 Task 1b - Values
@@ -30,9 +33,11 @@ Do the following:
 
    HINT: no function required
 */
+let a = 5;
+let b = 3;
 
-
-
+a = a*b;
+console.log(a);
 
 
 /*
@@ -45,9 +50,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
-
+let year = "1999";
+year = parseInt(year);
+console.log(year);
 
 /*
 Task 1d - Multiply
@@ -58,10 +63,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b;
   }
-
+ multiply(3,5);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,10 +79,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(years){
+    return (years * 7);
 }
-
+dogYears(5);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -107,10 +112,31 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(months, weight){
+    if(months < 4 && months > 2){
+      return (weight * .1);
+    }
+    else if(months < 7){
+      return (weight * .05);
+    }
+    else if(months < 12){
+      return (weight * .04);
+    }
+    else if(weight < 5){
+      return (weight * .05);
+    }
+    else if(weight < 10){
+      return (weight * .04);
+    }
+    else if(weight < 15){
+      return (weight * .03);
+    }
+    else if(weight > 15){
+      return (weight * .02);
+    }
+    else{return "too young"}
   }
-
+hungryDog(12,15);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -133,6 +159,7 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+
 
 function game(user, computer){
     /*add your code here*/
