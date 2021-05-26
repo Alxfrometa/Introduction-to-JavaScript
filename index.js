@@ -174,7 +174,7 @@ function game(user, computer){
     if (user === computer){
       return "it's a tie"
     }
-    else if((user === "rock" && computer === "paper") || (user === "paper" && computer === "scissors") || (user === "scissors" && computer === "rock")){
+    else if((user === "rock" && computer === "scissors") || (user === "paper" && computer === "rock") || (user === "scissors" && computer === "paper")){
       return "you win!"
     }
     else{return "you lose!"}
