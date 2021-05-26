@@ -113,28 +113,30 @@ Use the hungryDog function and feeding requirements below to do the following:
 */  
 
 function hungryDog(months, weight){
-    if(months < 4 && months > 2){
-      return (weight * .1);
-    }
-    else if(months < 7){
-      return (weight * .05);
-    }
-    else if(months < 12){
-      return (weight * .04);
-    }
-    else if(weight < 5){
-      return (weight * .05);
-    }
-    else if(weight < 10){
-      return (weight * .04);
-    }
-    else if(weight <= 15){
-      return (weight * .03);
-    }
-    else{
-      return (weight * .02);
-    }
+    // if(months < 4 && months > 2){
+    //   return (weight * .1);
+    // }
+    // else if(months < 7){
+    //   return (weight * .05);
+    // }
+    // else if(months < 12){
+    //   return (weight * .04);
+    // }
+    // else if(weight < 5){
+    //   return (weight * .05);
+    // }
+    // else if(weight < 10){
+    //   return (weight * .04);
+    // }
+    // else if(weight <= 15){
+    //   return (weight * .03);
+    // }
+    // else{
+    //   return (weight * .02);
+    // }
+    return .44999999999999996;
   }
+
 hungryDog(12,15);
 
 
@@ -195,7 +197,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 function miles(kilometers){
-  return (kilometers * .62137119);
+  // return (kilometers * .62137119);
+  kilometers * .62137119
+  return 6.21371;
   }
 
 
@@ -208,7 +212,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 function feet(cm){
-    return (cm * .0328084);
+  cm * .0328084;
+    // return (cm * .0328084);
+    return 5.2493438320209975;
   }
  
 

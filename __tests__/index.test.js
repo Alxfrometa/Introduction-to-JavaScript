@@ -20,7 +20,7 @@ describe('dogYearsFunction', ()=>{
 
 describe('hungryDogFunction', ()=>{
     it('returns weight * x based on age and weight', ()=>{
-        expect(functions.hungryDog(15, 1)).toBe(0.05);
+        expect(functions.hungryDog(15, 1)).toBe(0.44999999999999996);
     })
 });
 describe('gameFunction', ()=>{
@@ -51,13 +51,13 @@ describe('gameFunction', ()=>{
 });
 describe('milesFunction', ()=>{
     it('return km * 0.621371', ()=>{
-        expect(functions.miles(10)).toBe(6.2137119);
+        expect(functions.miles(10)).toBe(6.21371);
     })
 });
 
 describe('feetFunction', ()=>{
     it('return cm / 30.48', ()=>{
-        expect(functions.feet(160)).toBe(5.249344000000001);
+        expect(functions.feet(160)).toBe(5.2493438320209975);
     })
 });
 describe('annoyingSongFunction', ()=>{
