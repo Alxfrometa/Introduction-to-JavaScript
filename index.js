@@ -128,13 +128,12 @@ function hungryDog(months, weight){
     else if(weight < 10){
       return (weight * .04);
     }
-    else if(weight < 15){
+    else if(weight <= 15){
       return (weight * .03);
     }
-    else if(weight > 15){
+    else{
       return (weight * .02);
     }
-    else{return "too young"}
   }
 hungryDog(12,15);
 
@@ -159,11 +158,29 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let cp = Math.round(3 * Math.random())
+if(cp === 1){
+  cp = "rock"
+}
+else if(cp === 2)
+{
+  cp = "paper"
+}
+else{
+  cp = "scissors"
+}
 
 function game(user, computer){
-    /*add your code here*/
+    if (user === computer){
+      return "it's a tie"
+    }
+    else if((user === "rock" && computer === "paper") || (user === "paper" && computer === "scissors") || (user === "scissors" && computer === "rock")){
+      return "you win!"
+    }
+    else{return "you lose!"}
 }
+game("rock", cp)
+
   
   
 
@@ -177,9 +194,8 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilometers){
+  return (kilometers * .62137119);
   }
 
 
@@ -191,9 +207,8 @@ Using the feet function below do the following:
   2. Convert the number of cm to feet
   3. Return number of feet
 */
-
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return (cm * .0328084);
   }
  
 
@@ -208,10 +223,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(bottles){
+      for(let i = 0; i < bottles; i++){
+        return  (bottles -i) + " bottles of soda on the wall, " +(bottles -i) + " bottles of soda, take one down pass it around " + (bottles -i -1) + " bottles of soda on the wall"
+      }
   }
-
+annoyingSong(10);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -228,10 +245,24 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(number){
+    if (number >= 90){
+      return 'you got an A'
+    }
+    else if (number >= 80){
+      return 'you got a B'
+    }
+    else if (number >= 70){
+      return 'you got a C'
+    }
+    else if (number >= 60){
+      return 'you got a D'
+    }
+    else {
+      return 'you got an F'
+    }
   }
-  
+  grade(89);
   
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
