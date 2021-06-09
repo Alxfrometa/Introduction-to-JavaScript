@@ -33,7 +33,11 @@ Do the following:
 
    HINT: no function required
 */
+let a = 4;
+let b = 5;
+a = a + b;
 
+console.log(a);
 
 
 
@@ -48,6 +52,7 @@ Do the following:
 
    HINT: look up the Number method
 */
+let num = "1999";
 
 
 
@@ -61,8 +66,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a*b;
   }
 
 
